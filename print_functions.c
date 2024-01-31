@@ -7,7 +7,7 @@
  * Return: characters printed
  */
 
-int print_cha(va_list list, parameters_t *params)
+int print_char(va_list list, parameters_t *params)
 {
 	char space = ' ';
 	unsigned int pad = 1;
