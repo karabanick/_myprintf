@@ -41,6 +41,7 @@ int print_rev(va_list list, parameters_t *params)
 		for (len = 0; *str; str++)
 			len++;
 		str--;
+
 		for (; len > 0; len--, str--)
 		       sum += _putchar(*str);
 	}
@@ -76,5 +77,5 @@ int print_rot13(va_list list, parameters_t *params)
 			count += _putchar(a[i]);
 		i++;
 	}
-	return(count);
+	return (count);
 }

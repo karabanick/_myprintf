@@ -35,7 +35,7 @@ int print_integer(va_list list, parameters_t *params)
 	long i;
 
 	if (params->l_modifier)
-		i = va_arg(list,long);
+		i = va_arg(list, long);
 	else if (params->h_modifier)
 		i = (short int)va_arg(list, int);
 	else

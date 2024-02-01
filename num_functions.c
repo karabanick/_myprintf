@@ -2,7 +2,7 @@
 
 /**
  * convert_number - function that converts input
- * @n: input number
+ * @numb: input number
  * @base: base of conversion
  * @flag: flags for convrsion
  * @params: parameters in consideration
@@ -27,12 +27,10 @@ char *convert_number(long int numb, int base, int flag, parameters_t *params)
 	p = &buffer[49];
 	*p = '\0';
 
-	do
-	{
+	do {
 		*--p = arr[n % base];
 		n /= base;
-	}
-	while (n != 0);
+	} while (n != 0);
 
 	if (sign)
 		*--p = sign;

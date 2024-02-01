@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 		}
 		start = p;
 		p++;
-		
+
 		while (get_flag(p, &params))
 		{
 			p++;
